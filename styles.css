@@ -1,0 +1,159 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Градиентный фон в розовых оттенках по умолчанию */
+    background: linear-gradient(45deg, #ffc0cb, #ff69b4);
+    color: #333;
+  }
+  
+  header {
+    background: rgba(255, 182, 193, 0.5);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    position: relative;
+  }
+  
+  /* Заголовок, по умолчанию без фонового цвета */
+  header h1 {
+    background: transparent;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  /* Кнопка для изменения фона в правом верхнем углу */
+  #bgToggleButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    transition: transform 0.3s ease;
+  }
+  
+  #bgToggleButton:hover {
+    background: #ff1493;
+    transform: scale(1.05);
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin: 40px 0;
+  }
+  
+  /* Стили для разделов с изображениями и текстом */
+  .bio-container,
+  .career-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: rgba(255, 240, 245, 0.8);
+    padding: 16px;
+    border-radius: 12px;
+  }
+  
+  .bio-text,
+  .career-text {
+    flex: 1;
+    text-align: justify;
+  }
+  
+  .bio-image,
+  .career-image {
+    flex: 1;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bio-image img,
+  .career-image img {
+    max-width: 100%;
+    /*height: 400px;*/
+    border-radius: 10px;
+  }
+  
+  /* Стили для раздела хитов (горизонтальное расположение) */
+  .hits-section ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .hits-section li {
+    flex: 1 1 18%;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .hits-section button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .hits-section button:hover {
+    background: #ff1493;
+    transform: scale(1.05);
+  }
+  
+  .hit-text {
+    margin-top: 5px;
+    padding: 10px;
+    background: rgba(255, 240, 245, 0.8);
+    border-left: 3px solid #ff69b4;
+    text-align: left;
+  }
+  
+  /* Стили для футера */
+  footer {
+    margin-left: 20px;
+    padding: 20px 0;
+  }
+  
+  /* Responsive стили */
+  @media (max-width: 768px) {
+    .bio-container,
+    .career-container {
+      flex-direction: column;
+    }
+    .hits-section li {
+      flex: 1 1 45%;
+    }
+    header {
+        padding: 40px;
+    }
+    #bgToggleButton {
+        top: 10px;
+        right: 10px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    main {
+      max-width: 1000px;
+      margin: auto;
+    }
+  }
+  

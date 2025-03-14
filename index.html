@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Леди Гага</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Леди Гага</h1>
+    <!-- Кнопка для изменения фона (справа сверху) -->
+    <button id="bgToggleButton" onclick="toggleBackground()">Изменить фон</button>
+  </header>
+  <main>
+    <!-- Раздел Биография -->
+    <section class="bio-section">
+      <h2>Биография</h2>
+      <div class="bio-container">
+        <div class="bio-text">
+          <h3>Жизнь</h3>
+          <p>Леди Гага, урожденная Стефани Джоан Анджелина Германотта, родилась и выросла в Нью-Йорке. С ранних лет она проявляла интерес к музыке и театру, что в дальнейшем сформировало её уникальный стиль.</p>
+          <h3>Творчество</h3>
+          <p>Её творчество характеризуется смелыми экспериментами, яркими образами и эмоциональностью. Леди Гага стала символом самовыражения и свободы.</p>
+        </div>
+        <div class="bio-image">
+          <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1024x768_scale,f_auto,q_auto:best/newscms/2021_17/2920436/190703-lady_gaga-mc-1504.JPG" alt="Леди Гага">
+          <!-- https://i.pinimg.com/736x/34/e4/db/34e4db70109ee87250ef667f4f149d3e.jpg -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Раздел Карьера -->
+    <section class="career-section">
+      <h2>Карьера</h2>
+      <div class="career-container">
+        <div class="career-image">
+          <img src="https://media-manager.noticiasaominuto.com.br/gallery/1920/naom_5bad5610459f3.jpg" alt="Леди Гага на концерте">
+        </div>
+        <div class="career-text">
+          <h3>Музыка</h3>
+          <p>Леди Гага прославилась благодаря своим ярким выступлениям и уникальному стилю. Её музыка сочетает в себе элементы попа, танцевальной и электронной музыки.</p>
+          <h3>Хиты</h3>
+          <p>За годы творческой карьеры она выпустила множество хитов, которые завоевали мировые чарты, а её творческий подход вдохновил миллионы поклонников по всему миру.</p>
+          <p>Больше информации можно найти в <a href="https://ru.wikipedia.org/wiki/Леди_Гага" target="_blank">Википедии</a>.</p>       
+        </div>
+      </div>
+    </section>
+
+    <!-- Раздел Хиты (расположены горизонтально) -->
+    <section class="hits-section">
+      <h2>Хиты Леди Гаги</h2>
+      <ul>
+        <li>
+          <button onclick="toggleHitText('hit1')">Bad Romance</button>
+          <div id="hit1" class="hit-text" style="display:none;">
+            <p>Rah-rah-ah-ah-ah-ah!
+                <br/>Roma-roma-mamaa!
+                <br/>Ga-ga-ooh-la-la!
+                <br/>Want your bad romance
+            </p>
+          </div>
+        </li>
+        <li>
+          <button onclick="toggleHitText('hit2')">Poker Face</button>
+          <div id="hit2" class="hit-text" style="display:none;">
+            <p>Can't read my,
+                <br/>Can't read my
+                <br/>No he can't read my poker face
+                <br/>(She's got to love nobody)</p>
+          </div>
+        </li>
+        <li>
+          <button onclick="toggleHitText('hit3')">Shallow</button>
+          <div id="hit3" class="hit-text" style="display:none;">
+            <p>I'm off the deep end, watch as I dive in 
+                <br/>I'll never meet the ground 
+                <br/>Crash through the surface, where they can't hurt us 
+                <br/>We're far from the shallow now </p>
+          </div>
+        </li>
+        <li>
+          <button onclick="toggleHitText('hit4')">Just Dance</button>
+          <div id="hit4" class="hit-text" style="display:none;">
+            <p>Just dance!
+                <br/>Gonna be okay
+                <br/>Dada doo doot-n
+                <br/>Just dance!
+                <br/>Spin that record babe
+                <br/>Da da doo doot-n</p>
+          </div>
+        </li>
+        <li>
+          <button onclick="toggleHitText('hit5')">Born This Way</button>
+          <div id="hit5" class="hit-text" style="display:none;">
+            <p>I'm beautiful in my way
+                <br/>'Cause God makes no mistakes
+                <br/>I'm on the right track, Baby
+                <br/>I was born this way</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Леди Гага Fan Site</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
