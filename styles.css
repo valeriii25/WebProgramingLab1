@@ -1,9 +1,7 @@
-/* Общие стили */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* Градиентный фон в розовых оттенках по умолчанию */
     background: linear-gradient(45deg, #ffc0cb, #ff69b4);
     color: #333;
   }
@@ -16,14 +14,12 @@ body {
     position: relative;
   }
   
-  /* Заголовок, по умолчанию без фонового цвета */
   header h1 {
     background: transparent;
     padding: 10px;
     margin: 0;
   }
   
-  /* Кнопка для изменения фона в правом верхнем углу */
   #bgToggleButton {
     position: absolute;
     top: 20px;
@@ -51,7 +47,6 @@ body {
     margin: 40px 0;
   }
   
-  /* Стили для разделов с изображениями и текстом */
   .bio-container,
   .career-container {
     display: flex;
@@ -82,11 +77,9 @@ body {
   .bio-image img,
   .career-image img {
     max-width: 100%;
-    /*height: 400px;*/
     border-radius: 10px;
   }
   
-  /* Стили для раздела хитов (горизонтальное расположение) */
   .hits-section ul {
     display: flex;
     justify-content: space-around;
@@ -126,13 +119,11 @@ body {
     text-align: left;
   }
   
-  /* Стили для футера */
   footer {
     margin-left: 20px;
     padding: 20px 0;
   }
   
-  /* Responsive стили */
   @media (max-width: 768px) {
     .bio-container,
     .career-container {
